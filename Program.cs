@@ -8,6 +8,7 @@ namespace Zadanie
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Test");
+            Console.WriteLine("Test taki sam");
         }
     }
 }
