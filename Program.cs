@@ -6,7 +6,9 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Book");           
+            Console.WriteLine("Book");
+            string string1 = "Kowalczyk";
+            Console.WriteLine(string1);         
         }
     }
 }
