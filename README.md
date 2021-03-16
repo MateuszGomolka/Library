@@ -2,5 +2,4 @@
 Projekt biblioteki
 
 Wykonawcy:
-Matedro
-Sztorm
+Matedro, Sztorm
