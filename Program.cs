@@ -6,10 +6,7 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Test");
-            Console.WriteLine("Test taki sam");
-            Console.WriteLine("Hello");
+            Console.WriteLine("Book");           
         }
     }
 }
