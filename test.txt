@@ -1,0 +1,4 @@
+To jest przykładowy plik .txt
+
+Data modyfikacji:
+10:17
