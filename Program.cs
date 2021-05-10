@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Zadanie
 {
@@ -6,6 +7,8 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
+            var fileManager = new FileManager(booksPath: "./Books.json");
+
             Book a = new Book(
                 title: "Tytuł A",
                 authorFirstName: "Imię",
@@ -15,6 +18,8 @@ namespace Zadanie
 
             Console.WriteLine(a);  
             Console.WriteLine(b);  
+
+            fileManager.GetBooks().ToList().ForEach(Console.WriteLine);
         }
     }
 }
