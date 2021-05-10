@@ -9,6 +9,8 @@ namespace Zadanie
     {
         private readonly BookRepository bookRepository;
         private readonly OperationMenu addBookMenu;
+        private readonly OperationMenu findBookByTitleMenu;
+        private readonly OperationMenu findBookByAuthorMenu;
 
         public BaseMenu(BookRepository bookRepository)
         {
@@ -17,6 +19,16 @@ namespace Zadanie
                 operationHeader: "Wybrano opcję dodanie książki do zbioru biblioteki.\n", 
                 operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
                 operation: AddBookOperation
+            );
+            this.findBookByTitleMenu = new OperationMenu(
+                operationHeader: "Wybrano opcję wyszukaj książkę po tytule.\n",
+                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
+                operation: FindBookByTitleOperation
+            );
+            this.findBookByAuthorMenu = new OperationMenu(
+                operationHeader: "Wybrano opcję wyszukaj książkę po autorze.\n",
+                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
+                operation: FindBookByAuthorOperation
             );
         }
 
@@ -38,6 +50,14 @@ namespace Zadanie
             var book = new Book(title, firstName, lastName, releaseYear);
 
             bookRepository.AddBook(book);
+        }
+
+        private void FindBookByTitleOperation()
+        {
+        }
+
+        private void FindBookByAuthorOperation()
+        {
         }
 
         public void Start()
@@ -95,19 +115,13 @@ Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wyb�
     
         private void ChooseFindBookByTitle()
         {
-            Clear();
-            WriteLine("Wybrano opcję wyszukaj książkę po tytule.");
-            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
-            ReadKey(true);
+            findBookByTitleMenu.Run();
             RunMainMenu();
         }
 
         private void ChooseFindBookByAuthor()
         {
-            Clear();
-            WriteLine("Wybrano opcję wyszukaj książkę po autorze.");
-            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
-            ReadKey(true);
+            findBookByAuthorMenu.Run();
             RunMainMenu();
         }
 
