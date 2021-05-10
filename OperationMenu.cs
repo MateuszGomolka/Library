@@ -18,9 +18,17 @@ namespace Zadanie
         public void Run()
         {
             Console.Clear();
-            Console.WriteLine(operationHeader);
+
+            if (operationHeader != null)
+            {
+                Console.WriteLine(operationHeader);
+            }
             operation();
-            Console.WriteLine(operationFooter);
+            
+            if (operationFooter != null)
+            {
+                Console.WriteLine(operationFooter);
+            }
             Console.ReadKey(true);
         }
     }

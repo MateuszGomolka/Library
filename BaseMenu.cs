@@ -15,27 +15,28 @@ namespace Zadanie
             this.bookRepository = bookRepository;
             this.addBookMenu = new OperationMenu(
                 operationHeader: "Wybrano opcję dodanie książki do zbioru biblioteki.\n", 
-                operation: AddBookOperation,
-                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego."
+                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
+                operation: AddBookOperation
             );
         }
 
         private void AddBookOperation()
         {
             WriteLine("Tytuł:");
-            string title = Console.ReadLine();
+            string title = ReadLine();
 
             WriteLine("Imię:");
-            string firstName = Console.ReadLine();
+            string firstName = ReadLine();
 
             WriteLine("Nazwisko:");
-            string lastName = Console.ReadLine();
+            string lastName = ReadLine();
 
             WriteLine("Rok wydania:");
-            string releaseYearText = Console.ReadLine();
+            string releaseYearText = ReadLine();
 
             int.TryParse(releaseYearText, out int releaseYear);
-            var book = new Book(title, firstName, lastName, releaseYear);     
+            var book = new Book(title, firstName, lastName, releaseYear);
+
             bookRepository.AddBook(book);
         }
 
