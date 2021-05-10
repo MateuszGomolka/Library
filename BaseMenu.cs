@@ -54,10 +54,33 @@ namespace Zadanie
 
         private void FindBookByTitleOperation()
         {
+            WriteLine("Tytuł książki:");
+            string title = ReadLine();
+
+            IList<Book> booksWithTitle = bookRepository.FindBooksByTitle(title);
+
+            foreach(Book book in booksWithTitle)
+            {
+                System.Console.WriteLine(book);
+            }
+
         }
 
         private void FindBookByAuthorOperation()
         {
+            WriteLine("Imię autora:");
+            string firstName = ReadLine();
+
+            WriteLine("Nazwisko autora:");
+            string lastName = ReadLine();
+
+            IList<Book> booksWithName = bookRepository.FindBooksByAuthor(firstName, lastName);
+
+            foreach(Book book in booksWithName)
+            {
+                System.Console.WriteLine(book);
+            }
+
         }
 
         public void Start()

@@ -125,6 +125,12 @@
       "AuthorFirstName": "Stephen",
       "AuthorLastName": "King",
       "ReleaseYear": 2019
+    },
+    {
+      "Title": "Inkub",
+      "AuthorFirstName": "Artur",
+      "AuthorLastName": "Urbanowicz",
+      "ReleaseYear": 2019
     }
   ]
 }
