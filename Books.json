@@ -1,38 +1,78 @@
 {
     "Books": [{
-        "Title": "tytuł 1",
-        "AuthorFirstName": "imie 1",
-        "AuthorLastName": "nazwisko 1",
-        "ReleaseYear": "1111"
+        "Title": "Władca Pierścieni",
+        "AuthorFirstName": "John Ronald Reuel",
+        "AuthorLastName": "Tolkien",
+        "ReleaseYear": "1954"
     },{
-        "Title": "tytuł 2",
-        "AuthorFirstName": "imie 2",
-        "AuthorLastName": "nazwisko 2",
-        "ReleaseYear": "2222"
+        "Title": "Metro 2033",
+        "AuthorFirstName": "Dimitrij",
+        "AuthorLastName": "Głuchowski",
+        "ReleaseYear": "2005"
     },{
-        "Title": "tytuł 3",
-        "AuthorFirstName": "imie 3",
-        "AuthorLastName": "nazwisko 3",
-        "ReleaseYear": "3333"
+        "Title": "Czas zmierzchu",
+        "AuthorFirstName": "Dimitrij",
+        "AuthorLastName": "Głuchowski",
+        "ReleaseYear": "2007"
     },{
-        "Title": "tytuł 4",
-        "AuthorFirstName": "imie 4",
-        "AuthorLastName": "nazwisko 4",
-        "ReleaseYear": "4444"
+        "Title": "Władca Pierścieni: Drużyna Pierścienia",
+        "AuthorFirstName": "John Ronald Reuel",
+        "AuthorLastName": "Tolkien",
+        "ReleaseYear": "1954"
     },{
-        "Title": "tytuł 5",
-        "AuthorFirstName": "imie 5",
-        "AuthorLastName": "nazwisko 5",
-        "ReleaseYear": "5555"
+        "Title": "Doktor Sen",
+        "AuthorFirstName": "Stephen",
+        "AuthorLastName": "King",
+        "ReleaseYear": "2013"
     },{
-        "Title": "tytuł 6",
-        "AuthorFirstName": "imie 6",
-        "AuthorLastName": "nazwisko 6",
-        "ReleaseYear": "6666"
+        "Title": "Lśnienie",
+        "AuthorFirstName": "Stephen",
+        "AuthorLastName": "King",
+        "ReleaseYear": "1977"
     },{
-        "Title": "tytuł 7",
-        "AuthorFirstName": "imie 7",
-        "AuthorLastName": "nazwisko 7",
-        "ReleaseYear": "7777"
+        "Title": "Smętarz dla zwierzaków",
+        "AuthorFirstName": "Stephen",
+        "AuthorLastName": "King",
+        "ReleaseYear": "1983"
+    },{
+        "Title": "Zmierzch",
+        "AuthorFirstName": "Stephenie",
+        "AuthorLastName": "Meyer",
+        "ReleaseYear": "2005"
+    },{
+        "Title": "Miecz przeznaczenia",
+        "AuthorFirstName": "Andrzej",
+        "AuthorLastName": "Sapkowski",
+        "ReleaseYear": "1992"
+    },{
+        "Title": "Wieża Jaskółki",
+        "AuthorFirstName": "Andrzej",
+        "AuthorLastName": "Sapkowski",
+        "ReleaseYear": "1997"
+    },{
+        "Title": "Szpony i kły",
+        "AuthorFirstName": "Andrzej",
+        "AuthorLastName": "Sapkowski",
+        "ReleaseYear": "2017"
+    },{
+        "Title": "Osobliwy dom pani Peregrine",
+        "AuthorFirstName": "Ransom",
+        "AuthorLastName": "Riggs",
+        "ReleaseYear": "2011"
+    },{
+        "Title": "Miasto cieni",
+        "AuthorFirstName": "Ransom",
+        "AuthorLastName": "Riggs",
+        "ReleaseYear": "2014"
+    },{
+        "Title": "Silent Hill: Dying Inside",
+        "AuthorFirstName": "Ben",
+        "AuthorLastName": "Templesmith",
+        "ReleaseYear": "2004"
+    },{
+        "Title": "World of Warcraft: Illidan",
+        "AuthorFirstName": "William",
+        "AuthorLastName": "King",
+        "ReleaseYear": "2016"
     }]
 }
