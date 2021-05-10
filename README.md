@@ -13,7 +13,7 @@ Marcin Wicher
 
 ## Główne informacje
 
-Głównym celem tej aplikacji konsolowej jest zasymulowanie funkcjonalności systemu bibliotecznego, w którym można dodawać nowe książki do zbioru, a także przeszukiwać zbiór na dwa sposoby: poprzez wpisanie tytułu książki albo imienia oraz nazwiska autora.
+Głównym celem tej aplikacji konsolowej jest zasymulowanie funkcjonalności systemu bibliotecznego, w którym można dodawać nowe książki do zbioru, a także przeszukiwać zbiór na trzy sposoby: wypisywanie całego zbioru lub poprzez wpisanie tytułu książki albo imienia oraz nazwiska autora.
 	
 ## Jak działa?
 
@@ -25,9 +25,9 @@ Aplikacja podczas próby dodawania książki wymusza na użytkowniku wprowadzeni
 
 ## Zdjęcia
 
-![Screenshot](1.jpg)
-![Screenshot](6.jpg)
-![Screenshot](2.jpg)
-![Screenshot](3.jpg)
-![Screenshot](4.jpg)
-![Screenshot](5.jpg)
+![Screenshot](./Img/1.jpg)
+![Screenshot](./Img/6.jpg)
+![Screenshot](./Img/2.jpg)
+![Screenshot](./Img/3.jpg)
+![Screenshot](./Img/4.jpg)
+![Screenshot](./Img/5.jpg)
