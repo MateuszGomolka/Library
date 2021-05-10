@@ -16,15 +16,15 @@ namespace Library
         public IList<Book> FindBooksByTitle(string title)
             => fileManager
                 .GetBooks()
-                .Where(b => b.Title.Contains(title))
+                .Where(b => b.Title.ToUpper().Contains(title.ToUpper()))
                 .ToList();
 
         public IList<Book> FindBooksByAuthor(string firstName, string lastName)
             => fileManager
                 .GetBooks()
                 .Where(b => 
-                    b.AuthorFirstName.Contains(firstName) && 
-                    b.AuthorLastName.Contains(lastName))
+                    b.AuthorFirstName.ToUpper().Contains(firstName.ToUpper()) && 
+                    b.AuthorLastName.ToUpper().Contains(lastName.ToUpper()))
                 .ToList();
     }
 }
