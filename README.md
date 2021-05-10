@@ -1,12 +1,12 @@
 # Library
 ## Zawartość dokumentacji
-* Autorzy
+* Autorzy projektu
 * Główne informacje
 * Jak działa?
 * Dodatkowe inforamcje
 * Zdjęcia
 
-## Główne informacje
+## Autorzy projektu
 Mateusz Gomółka
 
 Marcin Wicher
@@ -21,6 +21,12 @@ Po włączeniu aplikacji użytkownik zostaje przekierowany do głównego menu bi
 
 ## Dodatkowe informacje
 
-Aplikacja podczas próby dodawania książki wymusza na użytkowniku wprowadzenia wszystkich kompletnych i poprawnych danych. W przypadku błędnych danych próba dodania do zbioru kończy się niepowodzeniem.
+Aplikacja podczas próby dodawania książki wymusza na użytkowniku wprowadzenia wszystkich kompletnych i poprawnych danych. W przypadku błędnych danych próba dodania do zbioru nie kończy się, do momentu aż użytkownik podane poprawne dane. Niezależnie od tego, czy podczas wyszukiwania zostaną użyte małe lub wielkie litery, nie wpływa to na efekt wyszukiwania.
 
 ## Zdjęcia
+
+![Screenshot](1.jpg)
+![Screenshot](2.jpg)
+![Screenshot](3.jpg)
+![Screenshot](4.jpg)
+![Screenshot](5.jpg)
