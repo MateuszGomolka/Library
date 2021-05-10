@@ -13,23 +13,25 @@ namespace Zadanie
             this.fileManager = fileManager;
         }
 
-        public void AddBook()
+        public void AddBook(Book book)
         {
             throw new NotImplementedException();
         }
 
-        public IList<Book> GetAllBooks()
-            => fileManager.GetBooks();
+        public IList<Book> GetAllBooks() => fileManager.GetBooks();
 
         public IList<Book> FindBooksByTitle(string title)
             => fileManager
                 .GetBooks()
-                .Where(b => b.Title == title)
+                .Where(b => b.Title.Contains(title))
                 .ToList();
 
-        public IList<Book> FindBookByAuthor()
-        {
-            throw new NotImplementedException();
-        }
+        public IList<Book> FindBooksByAuthor(string firstName, string lastName)
+            => fileManager
+                .GetBooks()
+                .Where(b => 
+                    b.AuthorFirstName.Contains(firstName) && 
+                    b.AuthorLastName.Contains(lastName))
+                .ToList();
     }
 }

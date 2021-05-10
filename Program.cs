@@ -11,25 +11,23 @@ namespace Zadanie
             BaseMenu MainMenu = new BaseMenu();
             MainMenu.Start();
 
-            // var fileManager = new FileManager(booksPath: "./Books.json");
-            // var bookRepository = new BookRepository (fileManager);
+            /*
+            var fileManager = new FileManager(booksPath: "./Books.json");
+            var bookRepository = new BookRepository (fileManager);
 
-            // Book a = new Book(
-            //     title: "Tytuł A",
-            //     authorFirstName: "Imię",
-            //     authorLastName: "Nazwisko",
-            //     releaseYear: 2000);  
-            // Book b = a.WithTitle("Tytuł B").WithReleaseYear(2002);
+            Book a = new Book(
+                title: "Tytuł A",
+                authorFirstName: "Imię",
+                authorLastName: "Nazwisko",
+                releaseYear: 2000);  
 
-            // Console.WriteLine(a);  
-            // Console.WriteLine(b);  
+            IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł");
 
-            // IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł 1");
-
-            // foreach(Book book in booksWithTitle)
-            // {
-            //     System.Console.WriteLine(book);
-            // }
+            foreach(Book book in booksWithTitle)
+            {
+                System.Console.WriteLine(book);
+            }
+            */
         }
     }
 }
