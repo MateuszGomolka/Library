@@ -8,25 +8,28 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
-            var fileManager = new FileManager(booksPath: "./Books.json");
-            var bookRepository = new BookRepository (fileManager);
+            BaseMenu MainMenu = new BaseMenu();
+            MainMenu.Start();
 
-            Book a = new Book(
-                title: "Tytuł A",
-                authorFirstName: "Imię",
-                authorLastName: "Nazwisko",
-                releaseYear: 2000);  
-            Book b = a.WithTitle("Tytuł B").WithReleaseYear(2002);
+            // var fileManager = new FileManager(booksPath: "./Books.json");
+            // var bookRepository = new BookRepository (fileManager);
 
-            Console.WriteLine(a);  
-            Console.WriteLine(b);  
+            // Book a = new Book(
+            //     title: "Tytuł A",
+            //     authorFirstName: "Imię",
+            //     authorLastName: "Nazwisko",
+            //     releaseYear: 2000);  
+            // Book b = a.WithTitle("Tytuł B").WithReleaseYear(2002);
 
-            IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł 1");
+            // Console.WriteLine(a);  
+            // Console.WriteLine(b);  
 
-            foreach(Book book in booksWithTitle)
-            {
-                System.Console.WriteLine(book);
-            }
+            // IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł 1");
+
+            // foreach(Book book in booksWithTitle)
+            // {
+            //     System.Console.WriteLine(book);
+            // }
         }
     }
 }
