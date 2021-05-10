@@ -1,38 +1,52 @@
 {
-    "Books": [{
-        "Title": "tytuł 1",
-        "AuthorFirstName": "imie 1",
-        "AuthorLastName": "nazwisko 1",
-        "ReleaseYear": "1111"
-    },{
-        "Title": "tytuł 2",
-        "AuthorFirstName": "imie 2",
-        "AuthorLastName": "nazwisko 2",
-        "ReleaseYear": "2222"
-    },{
-        "Title": "tytuł 3",
-        "AuthorFirstName": "imie 3",
-        "AuthorLastName": "nazwisko 3",
-        "ReleaseYear": "3333"
-    },{
-        "Title": "tytuł 4",
-        "AuthorFirstName": "imie 4",
-        "AuthorLastName": "nazwisko 4",
-        "ReleaseYear": "4444"
-    },{
-        "Title": "tytuł 5",
-        "AuthorFirstName": "imie 5",
-        "AuthorLastName": "nazwisko 5",
-        "ReleaseYear": "5555"
-    },{
-        "Title": "tytuł 6",
-        "AuthorFirstName": "imie 6",
-        "AuthorLastName": "nazwisko 6",
-        "ReleaseYear": "6666"
-    },{
-        "Title": "tytuł 7",
-        "AuthorFirstName": "imie 7",
-        "AuthorLastName": "nazwisko 7",
-        "ReleaseYear": "7777"
-    }]
+  "Books": [
+    {
+      "Title": "tytuł 1",
+      "AuthorFirstName": "imie 1",
+      "AuthorLastName": "nazwisko 1",
+      "ReleaseYear": 1111
+    },
+    {
+      "Title": "tytuł 2",
+      "AuthorFirstName": "imie 2",
+      "AuthorLastName": "nazwisko 2",
+      "ReleaseYear": 2222
+    },
+    {
+      "Title": "tytuł 3",
+      "AuthorFirstName": "imie 3",
+      "AuthorLastName": "nazwisko 3",
+      "ReleaseYear": 3333
+    },
+    {
+      "Title": "tytuł 4",
+      "AuthorFirstName": "imie 4",
+      "AuthorLastName": "nazwisko 4",
+      "ReleaseYear": 4444
+    },
+    {
+      "Title": "tytuł 5",
+      "AuthorFirstName": "imie 5",
+      "AuthorLastName": "nazwisko 5",
+      "ReleaseYear": 5555
+    },
+    {
+      "Title": "tytuł 6",
+      "AuthorFirstName": "imie 6",
+      "AuthorLastName": "nazwisko 6",
+      "ReleaseYear": 6666
+    },
+    {
+      "Title": "tytuł 7",
+      "AuthorFirstName": "imie 7",
+      "AuthorLastName": "nazwisko 7",
+      "ReleaseYear": 7777
+    },
+    {
+      "Title": "Tytuł A",
+      "AuthorFirstName": "Imię",
+      "AuthorLastName": "Nazwisko",
+      "ReleaseYear": 2000
+    }
+  ]
 }

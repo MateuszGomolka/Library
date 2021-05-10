@@ -13,13 +13,10 @@ namespace Zadanie
                 title: "Tytuł A",
                 authorFirstName: "Imię",
                 authorLastName: "Nazwisko",
-                releaseYear: 2000);  
-            Book b = a.WithTitle("Tytuł B").WithReleaseYear(2002);
+                releaseYear: 2000);
 
-            Console.WriteLine(a);  
-            Console.WriteLine(b);  
-
-            fileManager.GetBooks().ToList().ForEach(Console.WriteLine);
+            //fileManager.GetBooks().ToList().ForEach(Console.WriteLine);
+            fileManager.SaveBook(a);
         }
     }
 }
