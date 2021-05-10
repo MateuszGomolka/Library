@@ -8,13 +8,11 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
-            BaseMenu MainMenu = new BaseMenu();
-            MainMenu.Start();
-
-            /*
             var fileManager = new FileManager(booksPath: "./Books.json");
-            var bookRepository = new BookRepository (fileManager);
-
+            var bookRepository = new BookRepository(fileManager);
+            var mainMenu = new BaseMenu(bookRepository);
+            mainMenu.Start();
+            /*
             Book a = new Book(
                 title: "Tytuł A",
                 authorFirstName: "Imię",

@@ -5,20 +5,24 @@ using static System.Console;
 
 namespace Zadanie
 {
-    class BaseMenu
+    public class BaseMenu
     {
+        private readonly BookRepository bookRepository;
+
+        public BaseMenu(BookRepository bookRepository)
+        {
+            this.bookRepository = BookRepository;
+        }
 
         public void Start()
         {
-
             Title = "Zbiór książek - Biblioteka";
             RunMainMenu();           
-
         }
 
         private void RunMainMenu()
         {
-
+            Console.CursorVisible = false;
             string prompt = @"
 ██████╗ ██╗██████╗ ██╗     ██╗ ██████╗ ████████╗███████╗██╗  ██╗ █████╗ 
 ██╔══██╗██║██╔══██╗██║     ██║██╔═══██╗╚══██╔══╝██╔════╝██║ ██╔╝██╔══██╗
@@ -35,6 +39,7 @@ Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wyb�
 
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
+
 
             switch (selectedIndex)
             {
