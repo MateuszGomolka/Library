@@ -10,6 +10,7 @@ namespace Library
         private readonly OperationMenu addBookMenu;
         private readonly OperationMenu findBookByTitleMenu;
         private readonly OperationMenu findBookByAuthorMenu;
+        private readonly OperationMenu showAllBooksMenu;
 
         public BaseMenu(BookRepository bookRepository)
         {
@@ -28,6 +29,11 @@ namespace Library
                 operationHeader: "Wybrano opcję wyszukaj książkę po autorze.\n",
                 operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
                 operation: FindBookByAuthorOperation
+            );
+            this.showAllBooksMenu = new OperationMenu(
+                operationHeader: "Wybrano opcję wieświetl wszystkie książki.\n",
+                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
+                operation: ShowAllBooksOperation
             );
         }
 
@@ -52,8 +58,7 @@ namespace Library
             while(!canParseNumber)
             {
                 if (isWarning)
-                {
-                    
+                {     
                     SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
                     WriteLine(new string(' ', releaseYearText.Length));
                     SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
@@ -86,7 +91,6 @@ namespace Library
             {
                 WriteLine(book);
             }
-
         }
 
         private void FindBookByAuthorOperation()
@@ -103,7 +107,16 @@ namespace Library
             {
                 WriteLine(book);
             }
+        }
 
+        private void ShowAllBooksOperation()
+        {
+            IList<Book> booksWithName = bookRepository.GetAllBooks();
+
+            foreach(Book book in booksWithName)
+            {
+                WriteLine(book);
+            }
         }
 
         public void Start()
@@ -126,38 +139,46 @@ Witaj w konsolowym zbiorze książek.
 
 Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wybór należy wcisnąć ENTER.
 ";
-            string[] options = { "Dodaj książkę", "Wyszukaj po tytule", "Wyszukaj po autorze", "Autorzy", "Zakończ" };
+            string[] options = { "Dodaj książkę", "Wyświetl zbiór książek", "Wyszukaj po tytule", "Wyszukaj po autorze", "Autorzy", "Zakończ" };
 
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
-
             switch (selectedIndex)
             {
                 case 0:
-                    ChooseAdd();
+                    ChooseAddBook();
                     break;
                 case 1:
-                    ChooseFindBookByTitle();
+                    ChooseShowAllBooks();
                     break;
                 case 2:
-                    ChooseFindBookByAuthor();
+                    ChooseFindBookByTitle();
                     break;
                 case 3:
-                    ChooseAbout();
+                    ChooseFindBookByAuthor();
                     break;
                 case 4:
+                    ChooseAbout();
+                    break;
+                case 5:
                     ChooseExit();
                     break;
             }
         }
 
-        private void ChooseAdd()
+        private void ChooseAddBook()
         {
             addBookMenu.Run();
             RunMainMenu();
         }            
     
+        private void ChooseShowAllBooks()
+        {
+            showAllBooksMenu.Run();
+            RunMainMenu();
+        }
+
         private void ChooseFindBookByTitle()
         {
             findBookByTitleMenu.Run();
