@@ -1,103 +1,130 @@
 {
-    "Books": [{
-        "Title": "Władca Pierścieni",
-        "AuthorFirstName": "John Ronald Reuel",
-        "AuthorLastName": "Tolkien",
-        "ReleaseYear": "1954"
-    },{
-        "Title": "Metro 2033",
-        "AuthorFirstName": "Dimitrij",
-        "AuthorLastName": "Głuchowski",
-        "ReleaseYear": "2005"
-    },{
-        "Title": "Czas zmierzchu",
-        "AuthorFirstName": "Dimitrij",
-        "AuthorLastName": "Głuchowski",
-        "ReleaseYear": "2007"
-    },{
-        "Title": "Władca Pierścieni: Drużyna Pierścienia",
-        "AuthorFirstName": "John Ronald Reuel",
-        "AuthorLastName": "Tolkien",
-        "ReleaseYear": "1954"
-    },{
-        "Title": "Doktor Sen",
-        "AuthorFirstName": "Stephen",
-        "AuthorLastName": "King",
-        "ReleaseYear": "2013"
-    },{
-        "Title": "Lśnienie",
-        "AuthorFirstName": "Stephen",
-        "AuthorLastName": "King",
-        "ReleaseYear": "1977"
-    },{
-        "Title": "Smętarz dla zwierzaków",
-        "AuthorFirstName": "Stephen",
-        "AuthorLastName": "King",
-        "ReleaseYear": "1983"
-    },{
-        "Title": "Zmierzch",
-        "AuthorFirstName": "Stephenie",
-        "AuthorLastName": "Meyer",
-        "ReleaseYear": "2005"
-    },{
-        "Title": "Miecz przeznaczenia",
-        "AuthorFirstName": "Andrzej",
-        "AuthorLastName": "Sapkowski",
-        "ReleaseYear": "1992"
-    },{
-        "Title": "Wieża Jaskółki",
-        "AuthorFirstName": "Andrzej",
-        "AuthorLastName": "Sapkowski",
-        "ReleaseYear": "1997"
-    },{
-        "Title": "Szpony i kły",
-        "AuthorFirstName": "Andrzej",
-        "AuthorLastName": "Sapkowski",
-        "ReleaseYear": "2017"
-    },{
-        "Title": "Osobliwy dom pani Peregrine",
-        "AuthorFirstName": "Ransom",
-        "AuthorLastName": "Riggs",
-        "ReleaseYear": "2011"
-    },{
-        "Title": "Miasto cieni",
-        "AuthorFirstName": "Ransom",
-        "AuthorLastName": "Riggs",
-        "ReleaseYear": "2014"
-    },{
-        "Title": "Silent Hill: Dying Inside",
-        "AuthorFirstName": "Ben",
-        "AuthorLastName": "Templesmith",
-        "ReleaseYear": "2004"
-    },{
-        "Title": "World of Warcraft: Illidan",
-        "AuthorFirstName": "William",
-        "AuthorLastName": "King",
-        "ReleaseYear": "2016"
-    },{
-        "Title": "Detoks. Książka kucharska",
-        "AuthorFirstName": "Nicole",
-        "AuthorLastName": "Staabs",
-        "ReleaseYear": "2017"
-    },{
-        "Title": "Podkręć swój mózg!",
-        "AuthorFirstName": "Lucie",
-        "AuthorLastName": "Reynier",
-        "ReleaseYear": "2021"
-    },{
-        "Title": "Cień i kość",
-        "AuthorFirstName": "Leigh",
-        "AuthorLastName": "Bardugo",
-        "ReleaseYear": "2019"
-    },{
-        "Title": "Ekstremista",
-        "AuthorFirstName": "Remigiusz",
-        "AuthorLastName": "Mróz",
-        "ReleaseYear": "2021"
-    },{
-        "Title": "Pieśń Bogini Kali",
-        "AuthorFirstName": "Dan",
-        "AuthorLastName": "Simmons",
-        "ReleaseYear": "2021"
-    }]
+  "Books": [
+    {
+      "Title": "Władca Pierścieni",
+      "AuthorFirstName": "John Ronald Reuel",
+      "AuthorLastName": "Tolkien",
+      "ReleaseYear": 1954
+    },
+    {
+      "Title": "Metro 2033",
+      "AuthorFirstName": "Dimitrij",
+      "AuthorLastName": "Głuchowski",
+      "ReleaseYear": 2005
+    },
+    {
+      "Title": "Czas zmierzchu",
+      "AuthorFirstName": "Dimitrij",
+      "AuthorLastName": "Głuchowski",
+      "ReleaseYear": 2007
+    },
+    {
+      "Title": "Władca Pierścieni: Drużyna Pierścienia",
+      "AuthorFirstName": "John Ronald Reuel",
+      "AuthorLastName": "Tolkien",
+      "ReleaseYear": 1954
+    },
+    {
+      "Title": "Doktor Sen",
+      "AuthorFirstName": "Stephen",
+      "AuthorLastName": "King",
+      "ReleaseYear": 2013
+    },
+    {
+      "Title": "Lśnienie",
+      "AuthorFirstName": "Stephen",
+      "AuthorLastName": "King",
+      "ReleaseYear": 1977
+    },
+    {
+      "Title": "Smętarz dla zwierzaków",
+      "AuthorFirstName": "Stephen",
+      "AuthorLastName": "King",
+      "ReleaseYear": 1983
+    },
+    {
+      "Title": "Zmierzch",
+      "AuthorFirstName": "Stephenie",
+      "AuthorLastName": "Meyer",
+      "ReleaseYear": 2005
+    },
+    {
+      "Title": "Miecz przeznaczenia",
+      "AuthorFirstName": "Andrzej",
+      "AuthorLastName": "Sapkowski",
+      "ReleaseYear": 1992
+    },
+    {
+      "Title": "Wieża Jaskółki",
+      "AuthorFirstName": "Andrzej",
+      "AuthorLastName": "Sapkowski",
+      "ReleaseYear": 1997
+    },
+    {
+      "Title": "Szpony i kły",
+      "AuthorFirstName": "Andrzej",
+      "AuthorLastName": "Sapkowski",
+      "ReleaseYear": 2017
+    },
+    {
+      "Title": "Osobliwy dom pani Peregrine",
+      "AuthorFirstName": "Ransom",
+      "AuthorLastName": "Riggs",
+      "ReleaseYear": 2011
+    },
+    {
+      "Title": "Miasto cieni",
+      "AuthorFirstName": "Ransom",
+      "AuthorLastName": "Riggs",
+      "ReleaseYear": 2014
+    },
+    {
+      "Title": "Silent Hill: Dying Inside",
+      "AuthorFirstName": "Ben",
+      "AuthorLastName": "Templesmith",
+      "ReleaseYear": 2004
+    },
+    {
+      "Title": "World of Warcraft: Illidan",
+      "AuthorFirstName": "William",
+      "AuthorLastName": "King",
+      "ReleaseYear": 2016
+    },
+    {
+      "Title": "Detoks. Książka kucharska",
+      "AuthorFirstName": "Nicole",
+      "AuthorLastName": "Staabs",
+      "ReleaseYear": 2017
+    },
+    {
+      "Title": "Podkręć swój mózg!",
+      "AuthorFirstName": "Lucie",
+      "AuthorLastName": "Reynier",
+      "ReleaseYear": 2021
+    },
+    {
+      "Title": "Cień i kość",
+      "AuthorFirstName": "Leigh",
+      "AuthorLastName": "Bardugo",
+      "ReleaseYear": 2019
+    },
+    {
+      "Title": "Ekstremista",
+      "AuthorFirstName": "Remigiusz",
+      "AuthorLastName": "Mróz",
+      "ReleaseYear": 2021
+    },
+    {
+      "Title": "Pieśń Bogini Kali",
+      "AuthorFirstName": "Dan",
+      "AuthorLastName": "Simmons",
+      "ReleaseYear": 2021
+    },
+    {
+      "Title": "To",
+      "AuthorFirstName": "Stephen",
+      "AuthorLastName": "King",
+      "ReleaseYear": 2019
+    }
+  ]
 }

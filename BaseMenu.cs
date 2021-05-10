@@ -8,10 +8,35 @@ namespace Zadanie
     public class BaseMenu
     {
         private readonly BookRepository bookRepository;
+        private readonly OperationMenu addBookMenu;
 
         public BaseMenu(BookRepository bookRepository)
         {
             this.bookRepository = bookRepository;
+            this.addBookMenu = new OperationMenu(
+                operationHeader: "Wybrano opcję dodanie książki do zbioru biblioteki.\n", 
+                operation: AddBookOperation,
+                operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego."
+            );
+        }
+
+        private void AddBookOperation()
+        {
+            WriteLine("Tytuł:");
+            string title = Console.ReadLine();
+
+            WriteLine("Imię:");
+            string firstName = Console.ReadLine();
+
+            WriteLine("Nazwisko:");
+            string lastName = Console.ReadLine();
+
+            WriteLine("Rok wydania:");
+            string releaseYearText = Console.ReadLine();
+
+            int.TryParse(releaseYearText, out int releaseYear);
+            var book = new Book(title, firstName, lastName, releaseYear);     
+            bookRepository.AddBook(book);
         }
 
         public void Start()
@@ -22,7 +47,7 @@ namespace Zadanie
 
         private void RunMainMenu()
         {
-            Console.CursorVisible = false;
+            //Console.CursorVisible = false;
             string prompt = @"
 ██████╗ ██╗██████╗ ██╗     ██╗ ██████╗ ████████╗███████╗██╗  ██╗ █████╗ 
 ██╔══██╗██║██╔══██╗██║     ██║██╔═══██╗╚══██╔══╝██╔════╝██║ ██╔╝██╔══██╗
@@ -63,10 +88,7 @@ Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wyb�
 
         private void ChooseAdd()
         {
-            Clear();
-            WriteLine("Wybrano opcję dodanie książki do zbioru biblioteki.");
-            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
-            ReadKey(true);
+            addBookMenu.Run();
             RunMainMenu();
         }            
     
