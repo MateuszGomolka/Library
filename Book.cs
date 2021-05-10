@@ -1,6 +1,4 @@
-using System;
-
-namespace Zadanie 
+namespace Library
 {
     public class Book
     {

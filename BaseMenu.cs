@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using static System.Console;
 
-namespace Zadanie
+namespace Library
 {
     public class BaseMenu
     {
