@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Zadanie
@@ -8,6 +9,7 @@ namespace Zadanie
         static void Main(string[] args)
         {
             var fileManager = new FileManager(booksPath: "./Books.json");
+            var bookRepository = new BookRepository (fileManager);
 
             Book a = new Book(
                 title: "Tytuł A",
@@ -19,7 +21,12 @@ namespace Zadanie
             Console.WriteLine(a);  
             Console.WriteLine(b);  
 
-            fileManager.GetBooks().ToList().ForEach(Console.WriteLine);
+            IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł 1");
+
+            foreach(Book book in booksWithTitle)
+            {
+                System.Console.WriteLine(book);
+            }
         }
     }
 }
