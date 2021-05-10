@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using static System.Console;
 
 namespace Zadanie
@@ -44,9 +43,33 @@ namespace Zadanie
             string lastName = ReadLine();
 
             WriteLine("Rok wydania książki:");
-            string releaseYearText = ReadLine();
+            
+            bool canParseNumber = false;
+            bool isWarning = false;
+            int releaseYear = 0;
+            string releaseYearText = null;
 
-            int.TryParse(releaseYearText, out int releaseYear);
+            while(!canParseNumber)
+            {
+                if (isWarning)
+                {
+                    
+                    SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
+                    WriteLine(new string(' ', releaseYearText.Length));
+                    SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
+                }
+                releaseYearText = ReadLine();
+                canParseNumber = int.TryParse(releaseYearText, out releaseYear);
+
+                if (!isWarning && !canParseNumber)
+                {
+                    SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
+                    isWarning = true;
+                    ForegroundColor = ConsoleColor.Yellow;
+                    WriteLine("Podaj poprawny rok wydania książki.\n");
+                    ForegroundColor = ConsoleColor.White;
+                }          
+            }            
             var book = new Book(title, firstName, lastName, releaseYear);
 
             bookRepository.AddBook(book);
@@ -61,7 +84,7 @@ namespace Zadanie
 
             foreach(Book book in booksWithTitle)
             {
-                System.Console.WriteLine(book);
+                WriteLine(book);
             }
 
         }
@@ -78,7 +101,7 @@ namespace Zadanie
 
             foreach(Book book in booksWithName)
             {
-                System.Console.WriteLine(book);
+                WriteLine(book);
             }
 
         }

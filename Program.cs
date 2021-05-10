@@ -12,20 +12,6 @@ namespace Zadanie
             var bookRepository = new BookRepository(fileManager);
             var mainMenu = new BaseMenu(bookRepository);
             mainMenu.Start();
-            /*
-            Book a = new Book(
-                title: "Tytuł A",
-                authorFirstName: "Imię",
-                authorLastName: "Nazwisko",
-                releaseYear: 2000);  
-
-            IList<Book> booksWithTitle = bookRepository.FindBooksByTitle("tytuł");
-
-            foreach(Book book in booksWithTitle)
-            {
-                System.Console.WriteLine(book);
-            }
-            */
         }
     }
 }
