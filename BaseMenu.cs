@@ -34,16 +34,16 @@ namespace Zadanie
 
         private void AddBookOperation()
         {
-            WriteLine("Tytuł:");
+            WriteLine("Tytuł książki:");
             string title = ReadLine();
 
-            WriteLine("Imię:");
+            WriteLine("Imię autora:");
             string firstName = ReadLine();
 
-            WriteLine("Nazwisko:");
+            WriteLine("Nazwisko autora:");
             string lastName = ReadLine();
 
-            WriteLine("Rok wydania:");
+            WriteLine("Rok wydania książki:");
             string releaseYearText = ReadLine();
 
             int.TryParse(releaseYearText, out int releaseYear);
