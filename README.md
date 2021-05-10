@@ -8,6 +8,7 @@
 
 ## Główne informacje
 Mateusz Gomółka
+
 Marcin Wicher
 
 ## Główne informacje
