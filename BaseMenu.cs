@@ -59,22 +59,28 @@ Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wyb�
         private void ChooseAdd()
         {
             Clear();
-            WriteLine("Wybrałeś/aś opcję dodanie książki do zbioru biblioteki.");
-            ChooseExit();
+            WriteLine("Wybrano opcję dodanie książki do zbioru biblioteki.");
+            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
+            ReadKey(true);
+            RunMainMenu();
         }            
     
         private void ChooseFindBookByTitle()
         {
             Clear();
-            WriteLine("Wybrałeś/aś opcję wyszukaj książkę po tytule.");
-            ChooseExit();
+            WriteLine("Wybrano opcję wyszukaj książkę po tytule.");
+            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
+            ReadKey(true);
+            RunMainMenu();
         }
 
         private void ChooseFindBookByAuthor()
         {
             Clear();
-            WriteLine("Wybrałeś/aś opcję wyszukaj książkę po autorze.");
-            ChooseExit();
+            WriteLine("Wybrano opcję wyszukaj książkę po autorze.");
+            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
+            ReadKey(true);
+            RunMainMenu();
         }
 
         private void ChooseAbout()
@@ -84,13 +90,15 @@ Do poruszania się po menu należy użyć strzałek. Aby potwierdzić swój wyb�
             WriteLine("Wicher Marcin (45596),");
             WriteLine("Gomółka Mateusz (45585).");
             WriteLine("Systemy kontroli błędów i wersji.");
-            WriteLine("Naciśnij dowolny przycisk aby zakończyć pracę.");
+            WriteLine("\nNaciśnij dowolny przycisk aby wrócić do menu głównego.");
             ReadKey(true);
             RunMainMenu();
         }
 
         private void ChooseExit()
         {
+            Clear();
+            WriteLine("Wybrano opcję zakończ.");
             WriteLine("\nNaciśnij dowolny przycisk aby zakończyć pracę.");
             ReadKey(true);
             Environment.Exit(0);
