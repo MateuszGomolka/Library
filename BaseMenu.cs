@@ -31,7 +31,7 @@ namespace Library
                 operation: FindBookByAuthorOperation
             );
             this.showAllBooksMenu = new OperationMenu(
-                operationHeader: "Wybrano opcję wieświetl wszystkie książki.\n",
+                operationHeader: "Wybrano opcję wyświetl wszystkie książki.\n",
                 operationFooter: "Naciśnij dowolny przycisk aby wrócić do menu głównego.",
                 operation: ShowAllBooksOperation
             );
