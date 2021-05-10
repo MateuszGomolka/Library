@@ -3,9 +3,8 @@ using static System.Console;
 
 namespace Library
 {
-    class Menu
+    public class Menu
     {
-
         private int SelectedIndex;
         private string[] Options;
         private string Prompt;
