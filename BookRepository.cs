@@ -8,15 +8,9 @@ namespace Zadanie
     {
         private readonly FileManager fileManager;
 
-        public BookRepository(FileManager fileManager)
-        {
-            this.fileManager = fileManager;
-        }
+        public BookRepository(FileManager fileManager) => this.fileManager = fileManager;
 
-        public void AddBook(Book book)
-        {
-            throw new NotImplementedException();
-        }
+        public void AddBook(Book book) => fileManager.SaveBook(book);
 
         public IList<Book> GetAllBooks() => fileManager.GetBooks();
 
