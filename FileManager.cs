@@ -24,11 +24,10 @@ namespace Zadanie
 
         public IList<Book> GetBooks()
         {          
-            string jsonContent = File.ReadAllText(booksPath);
-            JObject jsonBookArrayObject = JObject.Parse(jsonContent);
-            JToken[] jsonBookTokens = jsonBookArrayObject["Books"].ToArray();
-
-            IList<Book> result = new List<Book>(jsonBookTokens.Length);
+            string jsonTextContent = File.ReadAllText(booksPath);
+            JObject jsonContent = JObject.Parse(jsonTextContent);
+            JToken[] jsonBookTokens = jsonContent["Books"].ToArray();
+            IList<Book> result = new List<Book>(capacity: jsonBookTokens.Length);
             
             foreach (JToken bookToken in jsonBookTokens)
             {
@@ -46,6 +45,21 @@ namespace Zadanie
                 }
             }
             return result;
+        }
+
+        public void SaveBook(Book book)
+        {
+            if (!IsValid(book))
+            {
+                return;
+            }
+            IList<Book> books = GetBooks();
+            books.Add(book);
+            var bookJsonArray = new Dictionary<string, IList<Book>>();
+            bookJsonArray.Add("Books", books);
+            
+            string jsonOutput = JsonConvert.SerializeObject(bookJsonArray, Formatting.Indented);
+            File.WriteAllText(booksPath, jsonOutput);
         }
     }
 }
