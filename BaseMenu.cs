@@ -114,7 +114,6 @@ namespace Zadanie
 
         private void RunMainMenu()
         {
-            //Console.CursorVisible = false;
             string prompt = @"
 ██████╗ ██╗██████╗ ██╗     ██╗ ██████╗ ████████╗███████╗██╗  ██╗ █████╗ 
 ██╔══██╗██║██╔══██╗██║     ██║██╔═══██╗╚══██╔══╝██╔════╝██║ ██╔╝██╔══██╗
