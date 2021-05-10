@@ -11,7 +11,7 @@ namespace Zadanie
 
         public BaseMenu(BookRepository bookRepository)
         {
-            this.bookRepository = BookRepository;
+            this.bookRepository = bookRepository;
         }
 
         public void Start()
