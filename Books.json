@@ -74,5 +74,30 @@
         "AuthorFirstName": "William",
         "AuthorLastName": "King",
         "ReleaseYear": "2016"
+    },{
+        "Title": "Detoks. Książka kucharska",
+        "AuthorFirstName": "Nicole",
+        "AuthorLastName": "Staabs",
+        "ReleaseYear": "2017"
+    },{
+        "Title": "Podkręć swój mózg!",
+        "AuthorFirstName": "Lucie",
+        "AuthorLastName": "Reynier",
+        "ReleaseYear": "2021"
+    },{
+        "Title": "Cień i kość",
+        "AuthorFirstName": "Leigh",
+        "AuthorLastName": "Bardugo",
+        "ReleaseYear": "2019"
+    },{
+        "Title": "Ekstremista",
+        "AuthorFirstName": "Remigiusz",
+        "AuthorLastName": "Mróz",
+        "ReleaseYear": "2021"
+    },{
+        "Title": "Pieśń Bogini Kali",
+        "AuthorFirstName": "Dan",
+        "AuthorLastName": "Simmons",
+        "ReleaseYear": "2021"
     }]
 }
