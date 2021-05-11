@@ -11,17 +11,19 @@ namespace Library
 
         public void AddBook(Book book) => fileManager.SaveBook(book);
 
-        public IList<Book> GetAllBooks() => fileManager.GetBooks();
+        public IList<Book> GetAllBooks()
+        => fileManager
+            .GetBooks()
+            .OrderBy(b => b.Title)
+            .ToList();
 
         public IList<Book> FindBooksByTitle(string title)
-            => fileManager
-                .GetBooks()
+            => GetAllBooks()
                 .Where(b => b.Title.ToUpper().Contains(title.ToUpper()))
                 .ToList();
 
         public IList<Book> FindBooksByAuthor(string firstName, string lastName)
-            => fileManager
-                .GetBooks()
+            => GetAllBooks()
                 .Where(b => 
                     b.AuthorFirstName.ToUpper().Contains(firstName.ToUpper()) && 
                     b.AuthorLastName.ToUpper().Contains(lastName.ToUpper()))
