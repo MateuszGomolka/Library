@@ -21,7 +21,7 @@ Po włączeniu aplikacji użytkownik zostaje przekierowany do głównego menu bi
 
 ## Dodatkowe informacje
 
-Aplikacja podczas próby dodawania książki wymusza na użytkowniku wprowadzenia wszystkich kompletnych i poprawnych danych. W przypadku błędnych danych próba dodania do zbioru nie kończy się, do momentu aż użytkownik podane poprawne dane. Niezależnie od tego, czy podczas wyszukiwania zostaną użyte małe lub wielkie litery, nie wpływa to na efekt wyszukiwania.
+Aplikacja podczas próby dodawania książki wymusza na użytkowniku wprowadzenia wszystkich kompletnych i poprawnych danych. W przypadku błędnych danych próba dodania do zbioru nie kończy się, do momentu aż użytkownik poda poprawne dane. Niezależnie od tego, czy podczas wyszukiwania zostaną użyte małe lub wielkie litery, nie wpływa to na efekt wyszukiwania.
 
 ## Zdjęcia
 
